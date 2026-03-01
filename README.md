@@ -137,3 +137,145 @@ Jimi-from-mars
 ## 免责声明
 
 本扩展仅为方便用户操作而设计，不保证在所有情况下都能正常工作。使用本扩展产生的任何后果由用户自行承担。请遵守X/Twitter的使用条款和社区准则。
+
+# English Version
+
+# X Quick Block Chrome Extension
+
+A simple and efficient Chrome browser extension that lets you quickly block users on X/Twitter.
+
+## Features
+
+- **One-click blocking**: Hold the `Ctrl` key (or `Command` on Mac) and click any tweet to block its author
+- **Real blocking**: Simulates manual operation, adding users to X's official block list, synced across all devices
+- **Smart recognition**: Automatically identifies usernames to avoid mistakes
+- **Operation feedback**: Shows real-time operation status and results
+- **Official list**: Uses X/Twitter's official blocking functionality, safe and reliable
+
+## Installation
+
+### From source code (Developer mode)
+
+1. Clone or download this repository
+2. Open Chrome browser and go to extensions page: `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked extension"
+5. Select the root directory of this project
+6. Extension installation complete
+
+### From Chrome Web Store
+
+> Note: This extension is not yet published to Chrome Web Store, currently only supports developer mode installation
+
+## Usage
+
+1. Visit [X/Twitter](https://x.com) or [Twitter](https://twitter.com)
+2. Browse the tweet timeline
+3. Hold the `Ctrl` key (`Command` on Mac)
+4. Click any tweet from the user you want to block
+5. A confirmation notification pops up, wait for the operation to complete
+6. User has been added to the official block list
+
+## File Structure
+
+```
+x-quick-blocker/
+├── manifest.json      # Extension configuration file
+├── content.js         # Main functionality script
+├── popup.html         # Extension popup page
+└── README.md          # Project documentation
+```
+
+## Technical Implementation
+
+- **manifest.json**: Chrome extension V3 configuration, declares permissions and scripts
+- **content.js**: Core logic, including:
+  - Tweet container recognition
+  - Username extraction
+  - Click simulation
+  - Notification display
+- **popup.html**: Extension icon popup, shows usage instructions
+
+### Blocking Process
+
+1. User holds Ctrl and clicks a tweet
+2. Plugin identifies tweet container and username
+3. Simulates clicking the tweet's "More" button
+4. Selects "Block" option from the menu
+5. Confirms in the dialog box
+6. Shows operation result notification
+
+## Permission Information
+
+| Permission | Purpose |
+|------------|---------|
+| `activeTab` | Gets current active tab, injects scripts |
+| `https://twitter.com/*` | Runs on Twitter website |
+| `https://x.com/*` | Runs on X website |
+
+## Important Notes
+
+⚠️ **Important Warnings**
+
+1. **Blocking operations cannot be batch undone**: Each block must be individually removed
+2. **Operation rate limits**: X/Twitter may have operation rate limits, avoid using too frequently
+3. **Failure handling**: If blocking fails, try manual operation
+4. **Browser compatibility**: Currently only supports Chrome and Chromium-based browsers
+
+## Managing Blocked Users
+
+To manage your blocked user list, visit:
+- [X block management page](https://x.com/settings/blocked/all)
+- [Twitter block management page](https://twitter.com/settings/blocked)
+
+## Frequently Asked Questions
+
+**Q: How to unblock after blocking?**
+A: Need to visit the block management page to manually unblock.
+
+**Q: Does the extension support other browsers?**
+A: Currently only supports Chrome and Chromium-based browsers (Edge, Brave, etc.).
+
+**Q: Is the extension safe?**
+A: The extension only simulates manual user operations, does not collect any user data, all blocking operations are completed through X/Twitter's official interface.
+
+## Development Guide
+
+### Local Testing
+
+1. Clone the project locally
+2. Load the extension in Chrome (developer mode)
+3. Visit X/Twitter website to test functionality
+
+### Modifying Configuration
+
+- Change version: Edit the `version` field in `manifest.json`
+- Extension name/description: Modify the `name` and `description` fields in `manifest.json`
+- Function logic: Modify the `content.js` file
+
+### Packaging for Release
+
+```bash
+# Compress project files to ZIP
+# Upload to Chrome Developer Console
+```
+
+## Version History
+
+### v1.0 (2026-03-01)
+- Initial version release
+- Supports quick blocking on X/Twitter websites
+- Provides popup usage instructions
+- Real-time operation feedback notifications
+
+## License
+
+MIT License
+
+## Author
+
+Jimi-from-mars
+
+## Disclaimer
+
+This extension is designed only for user convenience and does not guarantee functionality in all circumstances. Users bear full responsibility for any consequences arising from the use of this extension. Please comply with X/Twitter's terms of service and community guidelines.
