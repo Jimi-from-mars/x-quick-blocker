@@ -41,6 +41,7 @@ x-quick-blocker/
 ├── manifest.json      # 扩展配置文件
 ├── content.js         # 主功能脚本
 ├── popup.html         # 扩展弹窗页面
+├── icon.png           # 扩展图标
 └── README.md          # 项目说明文档
 ```
 
@@ -53,6 +54,7 @@ x-quick-blocker/
   - 模拟点击操作
   - 通知显示
 - **popup.html**: 扩展图标弹窗，显示使用说明
+- **icon.png**: 扩展图标文件，支持多种尺寸显示
 
 ### 屏蔽流程
 
@@ -183,6 +185,7 @@ x-quick-blocker/
 ├── manifest.json      # Extension configuration file
 ├── content.js         # Main functionality script
 ├── popup.html         # Extension popup page
+├── icon.png           # Extension icon
 └── README.md          # Project documentation
 ```
 
@@ -195,6 +198,7 @@ x-quick-blocker/
   - Click simulation
   - Notification display
 - **popup.html**: Extension icon popup, shows usage instructions
+- **icon.png**: Extension icon file, supports multiple display sizes
 
 ### Blocking Process
 
