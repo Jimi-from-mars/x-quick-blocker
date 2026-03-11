@@ -21,9 +21,9 @@
 5. 选择本项目的根目录
 6. 扩展安装完成
 
-### 从Chrome Web Store安装
+### [从Chrome Web Store安装]
 
-> 注意：本扩展尚未发布到Chrome Web Store，目前仅支持开发模式安装
+点击这里从Chrome Web Store安装](https://chromewebstore.google.com/detail/x-quick-block/dmedoamlpkodpdakpbemohffdoopejdd?authuser=0&hl=en)
 
 ## 使用方法
 
