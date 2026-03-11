@@ -1,6 +1,6 @@
 # X Quick Block Chrome Extension
 
-[Jump to English Version](#english-version)
+## [Jump to English Version](#english-version)
 
 一个简单高效的Chrome浏览器扩展，让你在X/Twitter上快速屏蔽用户。
 
