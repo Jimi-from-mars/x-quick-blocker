@@ -23,7 +23,6 @@
 
 ### [从Chrome Web Store安装]
 
-点击这里从Chrome Web Store安装](https://chromewebstore.google.com/detail/x-quick-block/dmedoamlpkodpdakpbemohffdoopejdd?authuser=0&hl=en)
 [点击这里从Chrome Web Store安装](https://chromewebstore.google.com/detail/x-quick-block/dmedoamlpkodpdakpbemohffdoopejdd?authuser=0&hl=en)
 
 ## 使用方法
